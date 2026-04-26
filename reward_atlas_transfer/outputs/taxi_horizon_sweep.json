@@ -1,0 +1,253 @@
+{
+  "horizons": [
+    {
+      "horizon": 20,
+      "anchor_build_time": 7.6933467499984545,
+      "h_finite": true,
+      "mu_finite": true,
+      "tasks": [
+        {
+          "task": "standard",
+          "horizon": 20,
+          "exact_solve_time": 0.4852195830026176,
+          "h_finite": true,
+          "h_max": 2980.9579870417283,
+          "mean_episode_length": 18.23360038826165,
+          "terminal_kl_o2": -2.0354775158289579e-16,
+          "geometry_error": {
+            "rmse_log": 0.0,
+            "linf_log": 0.0,
+            "relative_l2": 0.0
+          },
+          "delta_norm": 0.0
+        },
+        {
+          "task": "lawful",
+          "horizon": 20,
+          "exact_solve_time": 0.4875242919988523,
+          "h_finite": true,
+          "h_max": 2980.9579870417283,
+          "mean_episode_length": 18.216405128463116,
+          "terminal_kl_o2": 0.0012757766658394913,
+          "geometry_error": {
+            "rmse_log": 0.2211858497314632,
+            "linf_log": 0.5629162341535672,
+            "relative_l2": 0.049341351255833596
+          },
+          "delta_norm": 5.0
+        },
+        {
+          "task": "rush",
+          "horizon": 20,
+          "exact_solve_time": 0.48245424999913666,
+          "h_finite": true,
+          "h_max": 2980.9579870417283,
+          "mean_episode_length": 16.805830709931126,
+          "terminal_kl_o2": 2.9767014736688095e-05,
+          "geometry_error": {
+            "rmse_log": 0.04872689661383925,
+            "linf_log": 0.3665329686191985,
+            "relative_l2": 0.0061631719237616135
+          },
+          "delta_norm": 0.4
+        },
+        {
+          "task": "pickup_biased",
+          "horizon": 20,
+          "exact_solve_time": 0.47999766700013424,
+          "h_finite": true,
+          "h_max": 148.4131591025766,
+          "mean_episode_length": 19.916852800827794,
+          "terminal_kl_o2": 0.08031354741166916,
+          "geometry_error": {
+            "rmse_log": 0.9251016369922587,
+            "linf_log": 5.722970142118858,
+            "relative_l2": 0.265011635176274
+          },
+          "delta_norm": 3.605551275463989
+        },
+        {
+          "task": "cautious",
+          "horizon": 20,
+          "exact_solve_time": 0.47880945799988694,
+          "h_finite": true,
+          "h_max": 2980.9579870417283,
+          "mean_episode_length": 17.85926516678957,
+          "terminal_kl_o2": 9.010121277384735e-05,
+          "geometry_error": {
+            "rmse_log": 0.06486500775273489,
+            "linf_log": 0.1622763143310877,
+            "relative_l2": 0.012205500631139222
+          },
+          "delta_norm": 3.0016662039607267
+        }
+      ]
+    },
+    {
+      "horizon": 40,
+      "anchor_build_time": 15.336558374998276,
+      "h_finite": true,
+      "mu_finite": true,
+      "tasks": [
+        {
+          "task": "standard",
+          "horizon": 40,
+          "exact_solve_time": 0.9634980830014683,
+          "h_finite": true,
+          "h_max": 2980.9579870417283,
+          "mean_episode_length": 20.423385580842634,
+          "terminal_kl_o2": 2.9265628354476633e-19,
+          "geometry_error": {
+            "rmse_log": 0.0,
+            "linf_log": 0.0,
+            "relative_l2": 0.0
+          },
+          "delta_norm": 0.0
+        },
+        {
+          "task": "lawful",
+          "horizon": 40,
+          "exact_solve_time": 0.9513132080028299,
+          "h_finite": true,
+          "h_max": 2980.9579870417283,
+          "mean_episode_length": 20.35313575002366,
+          "terminal_kl_o2": 0.0003886818734885098,
+          "geometry_error": {
+            "rmse_log": 0.26121754559159865,
+            "linf_log": 0.7388300477975758,
+            "relative_l2": 0.04056983055738542
+          },
+          "delta_norm": 5.0
+        },
+        {
+          "task": "rush",
+          "horizon": 40,
+          "exact_solve_time": 0.9566914160022861,
+          "h_finite": true,
+          "h_max": 2980.9579870417283,
+          "mean_episode_length": 16.082890796831265,
+          "terminal_kl_o2": 1.8670479822714824e-06,
+          "geometry_error": {
+            "rmse_log": 0.27076200839494446,
+            "linf_log": 1.4099073753065916,
+            "relative_l2": 0.024363970581609933
+          },
+          "delta_norm": 0.4
+        },
+        {
+          "task": "pickup_biased",
+          "horizon": 40,
+          "exact_solve_time": 0.9519476660025248,
+          "h_finite": true,
+          "h_max": 1189.5900752724751,
+          "mean_episode_length": 39.38493697317737,
+          "terminal_kl_o2": 0.5815947191589166,
+          "geometry_error": {
+            "rmse_log": 2.871250683858923,
+            "linf_log": 11.33984928760325,
+            "relative_l2": 0.7333575828581275
+          },
+          "delta_norm": 3.605551275463989
+        },
+        {
+          "task": "cautious",
+          "horizon": 40,
+          "exact_solve_time": 0.9545718750014203,
+          "h_finite": true,
+          "h_max": 2980.9579870417283,
+          "mean_episode_length": 18.65222913156304,
+          "terminal_kl_o2": 7.01009112519059e-06,
+          "geometry_error": {
+            "rmse_log": 0.08392883993967362,
+            "linf_log": 0.21446527092808054,
+            "relative_l2": 0.01096348617230318
+          },
+          "delta_norm": 3.0016662039607267
+        }
+      ]
+    },
+    {
+      "horizon": 80,
+      "anchor_build_time": 30.606728957998712,
+      "h_finite": true,
+      "mu_finite": true,
+      "tasks": [
+        {
+          "task": "standard",
+          "horizon": 80,
+          "exact_solve_time": 1.9255684169984306,
+          "h_finite": true,
+          "h_max": 2980.9579870417283,
+          "mean_episode_length": 20.344184164897314,
+          "terminal_kl_o2": -3.4657780133699756e-23,
+          "geometry_error": {
+            "rmse_log": 0.0,
+            "linf_log": 0.0,
+            "relative_l2": 0.0
+          },
+          "delta_norm": 0.0
+        },
+        {
+          "task": "lawful",
+          "horizon": 80,
+          "exact_solve_time": 1.9064672500026063,
+          "h_finite": true,
+          "h_max": 2980.9579870417283,
+          "mean_episode_length": 20.275946728569807,
+          "terminal_kl_o2": 1.8345319203444938e-08,
+          "geometry_error": {
+            "rmse_log": 0.2575115160065664,
+            "linf_log": 0.7388300477975758,
+            "relative_l2": 0.03465031905486376
+          },
+          "delta_norm": 5.0
+        },
+        {
+          "task": "rush",
+          "horizon": 80,
+          "exact_solve_time": 1.9201293329970213,
+          "h_finite": true,
+          "h_max": 2980.9579870417283,
+          "mean_episode_length": 16.082751059408416,
+          "terminal_kl_o2": 1.0658170990395995e-15,
+          "geometry_error": {
+            "rmse_log": 0.40680079051759965,
+            "linf_log": 1.4099073753065916,
+            "relative_l2": 0.032371076301875544
+          },
+          "delta_norm": 0.4
+        },
+        {
+          "task": "pickup_biased",
+          "horizon": 80,
+          "exact_solve_time": 1.9095603749992733,
+          "h_finite": true,
+          "h_max": 402581.1469172118,
+          "mean_episode_length": 78.51784263837102,
+          "terminal_kl_o2": 2.655691875625795,
+          "geometry_error": {
+            "rmse_log": 5.381703592692552,
+            "linf_log": 17.299705454541375,
+            "relative_l2": 1.3873042191335005
+          },
+          "delta_norm": 3.605551275463989
+        },
+        {
+          "task": "cautious",
+          "horizon": 80,
+          "exact_solve_time": 1.9213038330017298,
+          "h_finite": true,
+          "h_max": 2980.9579870417283,
+          "mean_episode_length": 18.629206346474305,
+          "terminal_kl_o2": 1.900822772832703e-11,
+          "geometry_error": {
+            "rmse_log": 0.09064993237607036,
+            "linf_log": 0.21446527092808054,
+            "relative_l2": 0.010310049004606255
+          },
+          "delta_norm": 3.0016662039607267
+        }
+      ]
+    }
+  ]
+}

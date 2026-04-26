@@ -1,0 +1,149 @@
+{
+  "env": "Taxi-v3",
+  "variant": "taxi_h40",
+  "horizon": 40,
+  "n_anchors": 5,
+  "atlas_build_time": 81.57248054100273,
+  "tasks": [
+    {
+      "task": "standard",
+      "r": [
+        8.0,
+        -5.0,
+        -0.1,
+        1.0
+      ],
+      "terminal_kl_single_o2": 2.9265628354476633e-19,
+      "occupancy_kl_single_o2": 2.7288850993869516e-17,
+      "selected_anchor": "standard",
+      "atlas_distance": 0.0,
+      "terminal_kl_atlas_o1": 2.9265628354476633e-19,
+      "occupancy_kl_atlas_o1": 2.7288850993869516e-17,
+      "terminal_kl_atlas_o2": 2.9265628354476633e-19,
+      "occupancy_kl_atlas_o2": 2.7288850993869516e-17,
+      "geometry_error_atlas_o2": {
+        "rmse_log": 0.0,
+        "linf_log": 0.0,
+        "relative_l2": 0.0
+      },
+      "curvature_score": 0.0,
+      "first_second_disagreement": 0.0,
+      "min_action_margin": 0.0,
+      "action_flip_rate": 0.0,
+      "realizability_gap_mean": -3.444854780343838e-18,
+      "realizability_gap_max": 5.073581549438154e-16
+    },
+    {
+      "task": "lawful",
+      "r": [
+        8.0,
+        -10.0,
+        -0.1,
+        1.0
+      ],
+      "terminal_kl_single_o2": 0.0003886818734885098,
+      "occupancy_kl_single_o2": 0.001288950692827662,
+      "selected_anchor": "lawful",
+      "atlas_distance": 0.0,
+      "terminal_kl_atlas_o1": 2.1858701496208423e-16,
+      "occupancy_kl_atlas_o1": -2.6610214013982596e-18,
+      "terminal_kl_atlas_o2": 2.1858701496208423e-16,
+      "occupancy_kl_atlas_o2": -2.6610214013982596e-18,
+      "geometry_error_atlas_o2": {
+        "rmse_log": 0.0,
+        "linf_log": 0.0,
+        "relative_l2": 0.0
+      },
+      "curvature_score": 0.0,
+      "first_second_disagreement": 0.0,
+      "min_action_margin": 0.0,
+      "action_flip_rate": 0.0,
+      "realizability_gap_mean": 7.711205668376734e-18,
+      "realizability_gap_max": 5.07636061276528e-16
+    },
+    {
+      "task": "rush",
+      "r": [
+        8.0,
+        -5.0,
+        -0.5,
+        1.0
+      ],
+      "terminal_kl_single_o2": 1.8670479822714824e-06,
+      "occupancy_kl_single_o2": 0.0026740625730594485,
+      "selected_anchor": "rush",
+      "atlas_distance": 0.0,
+      "terminal_kl_atlas_o1": -5.551145026871839e-17,
+      "occupancy_kl_atlas_o1": 3.599632520124639e-17,
+      "terminal_kl_atlas_o2": -5.551145026871839e-17,
+      "occupancy_kl_atlas_o2": 3.599632520124639e-17,
+      "geometry_error_atlas_o2": {
+        "rmse_log": 0.0,
+        "linf_log": 0.0,
+        "relative_l2": 0.0
+      },
+      "curvature_score": 0.0,
+      "first_second_disagreement": 0.0,
+      "min_action_margin": 0.0,
+      "action_flip_rate": 0.0,
+      "realizability_gap_mean": 1.1337977506906085e-17,
+      "realizability_gap_max": 5.690864611989829e-16
+    },
+    {
+      "task": "pickup_biased",
+      "r": [
+        5.0,
+        -5.0,
+        -0.1,
+        3.0
+      ],
+      "terminal_kl_single_o2": 0.5815947191589166,
+      "occupancy_kl_single_o2": 0.3633889426529724,
+      "selected_anchor": "pickup_biased",
+      "atlas_distance": 0.0,
+      "terminal_kl_atlas_o1": -5.56851959567041e-17,
+      "occupancy_kl_atlas_o1": -1.0975210674141482e-16,
+      "terminal_kl_atlas_o2": -5.56851959567041e-17,
+      "occupancy_kl_atlas_o2": -1.0975210674141482e-16,
+      "geometry_error_atlas_o2": {
+        "rmse_log": 0.0,
+        "linf_log": 0.0,
+        "relative_l2": 0.0
+      },
+      "curvature_score": 0.0,
+      "first_second_disagreement": 0.0,
+      "min_action_margin": 0.0,
+      "action_flip_rate": 0.0,
+      "realizability_gap_mean": 2.740191359643731e-18,
+      "realizability_gap_max": 6.657003424119901e-16
+    },
+    {
+      "task": "cautious",
+      "r": [
+        8.0,
+        -8.0,
+        -0.2,
+        1.0
+      ],
+      "terminal_kl_single_o2": 7.01009112519059e-06,
+      "occupancy_kl_single_o2": 0.00010669361540681984,
+      "selected_anchor": "cautious",
+      "atlas_distance": 0.0,
+      "terminal_kl_atlas_o1": -5.605215218862192e-17,
+      "occupancy_kl_atlas_o1": 7.348725765931309e-17,
+      "terminal_kl_atlas_o2": -5.605215218862192e-17,
+      "occupancy_kl_atlas_o2": 7.348725765931309e-17,
+      "geometry_error_atlas_o2": {
+        "rmse_log": 0.0,
+        "linf_log": 0.0,
+        "relative_l2": 0.0
+      },
+      "curvature_score": 0.0,
+      "first_second_disagreement": 0.0,
+      "min_action_margin": 0.0,
+      "action_flip_rate": 0.0,
+      "realizability_gap_mean": 1.2316115457351358e-17,
+      "realizability_gap_max": 6.661338147750939e-16
+    }
+  ]
+}

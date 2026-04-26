@@ -1,0 +1,27 @@
+env_name: CliffWalking-v1
+env_kwargs: {}
+horizon: 100
+variant: deterministic
+description: "Deterministic CliffWalking - path cost and hazard avoidance"
+
+anchors:
+  - {name: standard, r: [5.0, -10.0, -0.1]}
+  - {name: goal_heavy, r: [10.0, -10.0, -0.1]}
+  - {name: cliff_fear, r: [5.0, -20.0, -0.1]}
+  - {name: fast_goal, r: [5.0, -10.0, -0.01]}
+  - {name: cautious, r: [5.0, -15.0, -0.2]}
+  - {name: explore, r: [3.0, -5.0, -0.01]}
+
+tasks:
+  - {name: standard, r: [5.0, -10.0, -0.1]}
+  - {name: goal_heavy, r: [10.0, -10.0, -0.1]}
+  - {name: cliff_fear, r: [5.0, -20.0, -0.1]}
+  - {name: fast_goal, r: [5.0, -10.0, -0.01]}
+  - {name: cautious, r: [5.0, -15.0, -0.2]}
+  - {name: explore, r: [3.0, -5.0, -0.01]}
+
+n_random_targets: 100
+random_box: [[-2, 15], [-25, -1], [-0.5, -0.005]]
+trust_radius: 3.0
+n_workers: 6
+seed: 42

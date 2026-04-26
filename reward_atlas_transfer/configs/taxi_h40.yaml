@@ -1,0 +1,25 @@
+env_name: Taxi-v3
+env_kwargs: {}
+horizon: 40
+variant: taxi_h40
+description: "Taxi with H=40 - medium horizon"
+
+anchors:
+  - {name: standard, r: [8.0, -5.0, -0.1, 1.0]}
+  - {name: lawful, r: [8.0, -10.0, -0.1, 1.0]}
+  - {name: rush, r: [8.0, -5.0, -0.5, 1.0]}
+  - {name: pickup_biased, r: [5.0, -5.0, -0.1, 3.0]}
+  - {name: cautious, r: [8.0, -8.0, -0.2, 1.0]}
+
+tasks:
+  - {name: standard, r: [8.0, -5.0, -0.1, 1.0]}
+  - {name: lawful, r: [8.0, -10.0, -0.1, 1.0]}
+  - {name: rush, r: [8.0, -5.0, -0.5, 1.0]}
+  - {name: pickup_biased, r: [5.0, -5.0, -0.1, 3.0]}
+  - {name: cautious, r: [8.0, -8.0, -0.2, 1.0]}
+
+n_random_targets: 50
+random_box: [[2, 12], [-12, -1], [-0.6, -0.02], [0.1, 4.0]]
+trust_radius: 2.0
+n_workers: 6
+seed: 42

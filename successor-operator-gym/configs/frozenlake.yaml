@@ -1,0 +1,55 @@
+env_name: FrozenLake-v1
+
+variants:
+  - name: deterministic_4x4
+    env_kwargs:
+      is_slippery: false
+      map_name: "4x4"
+    description: "Deterministic 4x4 - exact transfer should be very strong"
+
+  - name: slippery_4x4
+    env_kwargs:
+      is_slippery: true
+      map_name: "4x4"
+    description: "Slippery 4x4 - clean stochastic realizability gap test"
+
+  - name: deterministic_8x8
+    env_kwargs:
+      is_slippery: false
+      map_name: "8x8"
+    description: "Deterministic 8x8 - larger exact transfer test"
+
+  - name: slippery_8x8
+    env_kwargs:
+      is_slippery: true
+      map_name: "8x8"
+    description: "Slippery 8x8 - larger stochastic test"
+
+# Feature dimension: 3 (goal, hole, step_count)
+# w = [w_goal, w_hole, w_step]
+reference_w: [5.0, -5.0, -0.1]
+
+task_weights:
+  - name: "standard"
+    w: [5.0, -5.0, -0.1]
+  - name: "goal_heavy"
+    w: [10.0, -3.0, -0.1]
+  - name: "hole_penalty"
+    w: [5.0, -10.0, -0.05]
+  - name: "fast_goal"
+    w: [8.0, -5.0, -0.5]
+  - name: "explore"
+    w: [3.0, -2.0, -0.01]
+  - name: "cautious"
+    w: [5.0, -8.0, -0.2]
+
+geometry_sweep:
+  base_w: [5.0, -5.0, -0.1]
+  delta_range: [-3.0, 3.0]
+  n_deltas: 20
+  seed: 42
+
+n_rollout_episodes: 2000
+max_episode_steps: 200
+n_workers: 6
+seed: 42

@@ -1,0 +1,29 @@
+env_name: FrozenLake-v1
+env_kwargs:
+  is_slippery: false
+  map_name: "8x8"
+horizon: 100
+variant: deterministic_8x8
+description: "Deterministic 8x8 FrozenLake - larger exact transfer test"
+
+anchors:
+  - {name: standard, r: [5.0, -5.0, -0.1]}
+  - {name: goal_heavy, r: [10.0, -3.0, -0.1]}
+  - {name: hole_penalty, r: [5.0, -10.0, -0.05]}
+  - {name: fast_goal, r: [8.0, -5.0, -0.5]}
+  - {name: cautious, r: [5.0, -8.0, -0.2]}
+  - {name: explore, r: [3.0, -2.0, -0.01]}
+
+tasks:
+  - {name: standard, r: [5.0, -5.0, -0.1]}
+  - {name: goal_heavy, r: [10.0, -3.0, -0.1]}
+  - {name: hole_penalty, r: [5.0, -10.0, -0.05]}
+  - {name: fast_goal, r: [8.0, -5.0, -0.5]}
+  - {name: cautious, r: [5.0, -8.0, -0.2]}
+  - {name: explore, r: [3.0, -2.0, -0.01]}
+
+n_random_targets: 100
+random_box: [[-2, 15], [-15, 2], [-0.6, -0.005]]
+trust_radius: 2.0
+n_workers: 6
+seed: 42
