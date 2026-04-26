@@ -23,6 +23,6 @@ Thumbs.db
 *.swp
 *.swo
 
-# Experiment outputs
+# Scratch outputs (each experiment commits snapshots under its own results/)
 outputs/
-reward_atlas_transfer/outputs/
+lib/outputs/
