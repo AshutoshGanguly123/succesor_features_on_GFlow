@@ -97,6 +97,17 @@ This codebase supports the empirical claims around:
 
 ---
 
+## Publishing to GitHub
+
+If this folder is not yet linked to your remote:
+
+```bash
+git remote add origin https://github.com/AshutoshGanguly123/succesor_features_on_GFlow.git
+git push -u origin main
+```
+
+Use the branch you are on if it is not `main`.
+
 ## License
 
 Add a `LICENSE` file if you intend open redistribution; none is bundled by default.
