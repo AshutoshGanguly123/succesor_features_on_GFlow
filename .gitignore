@@ -22,3 +22,7 @@ build/
 Thumbs.db
 *.swp
 *.swo
+
+# Experiment outputs
+outputs/
+reward_atlas_transfer/outputs/

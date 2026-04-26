@@ -27,20 +27,39 @@ from src.core.bridge_projection import project_policy, tilted_joint_law
 from src.core.geometry import solve_moments, approx_h
 from src.core.occupancy import compute_terminal_distribution, compute_occupancy
 from src.core.metrics import terminal_kl, occupancy_kl, geometry_error, policy_kl
+from src.envs.build_tabular_model import Anchor
 from src.core.diagnostics import (
     realizability_gap, first_second_disagreement, min_action_margin,
     action_flip_rate, curvature_score
 )
-from src.core.atlas import build_anchor
 from src.utils.io import load_config, save_results
 from src.utils.logging import timed, print_results_table, console
 
 
 ENV_FEATURE_BUILDERS = {
     "FrozenLake-v1": lambda model, cfg: build_frozenlake_reward(model, cfg.get("env_kwargs", {})),
-    "CliffWalking-v1": lambda model, cfg: build_cliffwalking_reward(model),
+    "CliffWalking-v0": lambda model, cfg: build_cliffwalking_reward(model),
     "Taxi-v3": lambda model, cfg: build_taxi_reward(model),
 }
+
+
+def build_anchor(name, r_anchor, model, reward, pi0) -> Anchor:
+    """Build single local anchor for direct-transfer experiments."""
+    h = solve_h(model, reward, pi0, r_anchor)
+    mu, Sigma = solve_moments(model, reward, pi0, r_anchor, h)
+    log_h = np.log(np.maximum(h, 1e-300))
+    policy, _ = project_policy(model, reward, pi0, r_anchor, h)
+    metric = np.eye(reward.dim, dtype=np.float64)
+    return Anchor(
+        name=name,
+        r=r_anchor,
+        h=h,
+        log_h=log_h,
+        mu=mu,
+        Sigma=Sigma,
+        policy=policy,
+        metric=metric,
+    )
 
 
 def run_task(model, reward, pi0, r_target, task_name, anchor):

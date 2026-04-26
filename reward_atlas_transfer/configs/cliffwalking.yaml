@@ -1,4 +1,4 @@
-env_name: CliffWalking-v1
+env_name: CliffWalking-v0
 env_kwargs: {}
 horizon: 100
 variant: deterministic

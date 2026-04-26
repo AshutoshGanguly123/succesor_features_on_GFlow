@@ -1,0 +1,19 @@
+{
+  "setup": {
+    "depth": 8,
+    "n_internal": 255,
+    "n_terminals": 256,
+    "feature_dim": 6,
+    "seed": 7
+  },
+  "q1_linear": {
+    "max_abs_error": 3.552713678800501e-15,
+    "mean_abs_error": 1.8376504022180975e-15
+  },
+  "q1_loglinear_global_fit": {
+    "state_rmse_log_mean": 0.8306547402045458,
+    "state_rmse_log_max": 2.1638220815200193,
+    "terminal_kl_mean": 0.550801405068564,
+    "terminal_kl_max": 1.9603967945247502
+  }
+}

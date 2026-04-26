@@ -1,0 +1,83 @@
+{
+  "setup": {
+    "depth": 8,
+    "n_internal": 255,
+    "n_terminals": 256,
+    "feature_dim": 6,
+    "seed": 9
+  },
+  "q2_results": [
+    {
+      "delta_norm": 0.1,
+      "terminal_kl_o1": 6.667898528657534e-07,
+      "terminal_kl_o2": 4.85247542583504e-09,
+      "improvement_ratio_o1_over_o2": 137.41230904863545
+    },
+    {
+      "delta_norm": 0.2,
+      "terminal_kl_o1": 7.220308569691014e-06,
+      "terminal_kl_o2": 2.281566996200073e-07,
+      "improvement_ratio_o1_over_o2": 31.646270224439455
+    },
+    {
+      "delta_norm": 0.3,
+      "terminal_kl_o1": 2.457468231801792e-05,
+      "terminal_kl_o2": 1.8746034569718005e-06,
+      "improvement_ratio_o1_over_o2": 13.109269710680788
+    },
+    {
+      "delta_norm": 0.4,
+      "terminal_kl_o1": 5.211120470250156e-05,
+      "terminal_kl_o2": 7.487561597001194e-06,
+      "improvement_ratio_o1_over_o2": 6.95970297237653
+    },
+    {
+      "delta_norm": 0.5,
+      "terminal_kl_o1": 8.55295619373185e-05,
+      "terminal_kl_o2": 2.007623342839592e-05,
+      "improvement_ratio_o1_over_o2": 4.260239463860043
+    },
+    {
+      "delta_norm": 0.6,
+      "terminal_kl_o1": 0.00011986516683706449,
+      "terminal_kl_o2": 4.177553172468921e-05,
+      "improvement_ratio_o1_over_o2": 2.869267293280783
+    },
+    {
+      "delta_norm": 0.7,
+      "terminal_kl_o1": 0.0001512857749277033,
+      "terminal_kl_o2": 7.294595188078116e-05,
+      "improvement_ratio_o1_over_o2": 2.0739433927047304
+    },
+    {
+      "delta_norm": 0.7999999999999999,
+      "terminal_kl_o1": 0.00017759239713072876,
+      "terminal_kl_o2": 0.00011204360582672303,
+      "improvement_ratio_o1_over_o2": 1.5850292912330743
+    },
+    {
+      "delta_norm": 0.8999999999999999,
+      "terminal_kl_o1": 0.00019798635284301754,
+      "terminal_kl_o2": 0.0001561007162437098,
+      "improvement_ratio_o1_over_o2": 1.2683244357054355
+    },
+    {
+      "delta_norm": 0.9999999999999999,
+      "terminal_kl_o1": 0.0002125971010007932,
+      "terminal_kl_o2": 0.00020147711407575788,
+      "improvement_ratio_o1_over_o2": 1.0551923079504408
+    },
+    {
+      "delta_norm": 1.0999999999999999,
+      "terminal_kl_o1": 0.0002220421621609602,
+      "terminal_kl_o2": 0.00024458699659541576,
+      "improvement_ratio_o1_over_o2": 0.9078248854261531
+    },
+    {
+      "delta_norm": 1.2,
+      "terminal_kl_o1": 0.0002271151171122334,
+      "terminal_kl_o2": 0.0002824320947660713,
+      "improvement_ratio_o1_over_o2": 0.8041406105079699
+    }
+  ]
+}

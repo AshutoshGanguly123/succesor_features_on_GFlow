@@ -19,7 +19,7 @@ class TestExtract:
         m.validate()
 
     def test_cliffwalking(self):
-        m = extract_tabular_model("CliffWalking-v1", H=100)
+        m = extract_tabular_model("CliffWalking-v0", H=100)
         assert m.nS == 48 and m.nA == 4
         m.validate()
 
