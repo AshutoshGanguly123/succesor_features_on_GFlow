@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "reward-atlas-transfer"
 version = "0.2.0"
-description = "Reward Atlas, Continuation, and Bridge Projection for Gymnasium Transfer"
+description = "Successor-flow tabular experiments: binary DAG (Q1-Q3) and Gymnasium benchmarks"
 requires-python = ">=3.10"
 dependencies = [
     "gymnasium>=1.0.0",
